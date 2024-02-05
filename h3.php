@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>3</title>
         <meta charset="utf-8" />
         <meta
             name="viewport"
@@ -18,58 +18,39 @@
 
     <body>
 <div class="container">
-<h1>yl1</h1>
+<h1>yl3</h1>
+<form method="post" action="">
+    <label for="a">a: </label>
+    <input type="number" step="any" id="a" name="a" required><br>
+
+    <label for="b">b: </label>
+    <input type="number" step="any" id="b" name="b" required><br>
+
+    <label for="h">h: </label>
+    <input type="number" step="any" id="h" name="h" required><br>
+    <input type="submit" value="arvuta">
+</form>
+
 <?php
-/*
-yl01
-toomas
-01/02/24
-*/
-
-$nimi = 'toomas';
-$synd = 17;
-$kuju = 'kolmnurk';
-echo "nimi ".$nimi." synniaasta ".$synd." t2htkuju ".$kuju."<br>";
-echo "\"It's My Life\" - Dr. Alban<br>";
-
-echo "(\(\<br>";
-echo "( -.-)<br>";
-echo "o_(\")(\")<br>";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $a = $_POST["a"];
+    $b = $_POST["b"];
+    $h = $_POST["h"];
+  
+   
+    $p = ($a + $b) * $h / 2;
+  
+  
+    $s = 4 * sqrt(pow(($a / 2), 2) + pow($h, 2));
+  
+    echo "trapets S= " . round($s, 1) . " cm²</br>";
+    echo "romb P= " . round($p, 1) . " cm</br>";
+  }
 ?>
 
-<h1>y2</h1>
-<?php
 
-$nr1 = 12;
-$nr2 = 5;
-$liit = $nr1 + $nr2;
-$laht = $nr1 - $nr2;
-$kord = $nr1 * $nr2;
-$jaga = $nr1 / $nr2;
-$j22k = $nr1 % $nr2;
-echo sprintf('12 + 5 = %0.3f <br>', $liit);
-$v2 = sprintf('12 - 5 = %0.3f <br>', $laht);
-$v3 = sprintf('12 * 5 = %0.3f <br>', $kord);
-$v4 = sprintf('12 / 5 = %0.3f <br>', $jaga);
-$v5 = sprintf('12 ¤ 5 = %0.3f <br>', $j22k);
-echo $v2,$v3,$v4,$v5;
 
-$mm = 1500;
-$cm = $mm / 10;
-$m = $cm / 100;
-echo "mil ".number_format($mm, 2) . " mm<br>";
-echo "sent ".number_format($cm, 2) . " cm<br>";
-echo "meeter ".number_format($m, 2) . " m<br>";
 
-$a = 3;
-$b = 4;
-$c = sqrt($a**2 + $b**2);
-$ymber = round($a + $b + $c);
-$pind = round(0.5 * $a * $b);
-
-echo "ümbermõõt $ymber pindala  $pind";
-
-?>
 </div>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
