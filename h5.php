@@ -1,4 +1,11 @@
 <!doctype html>
+
+<!--
+               yl01
+              toomas
+              01/02/24
+-->
+
 <html lang="en">
     <head>
         <title>3</title>
@@ -18,34 +25,15 @@
 
     <body>
 <div class="container">
-<h1>yl3</h1>
-<form method="post" action="">
-    <label for="a">a: </label>
-    <input type="number" step="any" id="a" name="a" required><br>
+<h1>yl4</h1>
 
-    <label for="b">b: </label>
-    <input type="number" step="any" id="b" name="b" required><br>
-
-    <label for="h">h: </label>
-    <input type="number" step="any" id="h" name="h" required><br>
-    <input type="submit" value="arvuta">
-</form>
 
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $a = $_POST["a"];
-    $b = $_POST["b"];
-    $h = $_POST["h"];
-  
-   
-    $p = ($a + $b) * $h / 2;
-  
-  
-    $s = 4 * sqrt(pow(($a / 2), 2) + pow($h, 2));
-  
-    echo "trapets S= " . round($s, 1) . " cm²</br>";
-    echo "romb P= " . round($p, 1) . " cm</br>";
-  }
+
+
+
+
+
 ?>
 
 

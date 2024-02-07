@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>1 2</title>
         <meta charset="utf-8" />
         <meta
             name="viewport"
