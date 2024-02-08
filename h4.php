@@ -3,7 +3,7 @@
 <!--
                yl01
               toomas
-              01/02/24
+              05/02/24
 -->
 
 <html lang="en">
@@ -11,9 +11,9 @@
 <head>
     <title>4</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -42,9 +42,9 @@
                     $nr2 = $_GET['nr2'];
                     if ($nr2 != 0) {
                         $result = $nr1 / $nr2;
-                        echo "<p>vastus: $result</p>";
+                        echo "vastus: $result";
                     } else {
-                        echo "<p>nulliga ei saa jagada</p>";
+                        echo "nulliga ei saa jagada";
                     }
                 }
                 ?>
@@ -70,14 +70,14 @@
                     $age2 = $_POST["age2"];
                     if (!empty($age1) && !empty($age2)) {
                         if ($age1 > $age2) {
-                            echo "<p>Esimene on vanem</p>";
+                            echo "Esimene on vanem";
                         } elseif ($age2 > $age1) {
-                            echo "<p>Teine on vanem</p>";
+                            echo "Teine on vanem";
                         } else {
-                            echo "<p>Mõlemad on ühevanused</p>";
+                            echo "Mõlemad on ühevanused";
                         }
                     } else {
-                        echo "<p>Vanus on puudu</p>";
+                        echo "Vanus on puudu";
                     }
                 }
                 ?>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="form-group">
                         <label for="lai">Laius:</label>
-                        <input type="number" class="form-control" id="width" name="width" required>
+                        <input type="number" class="form-control" id="lai" name="lai" required>
                     </div>
                     <br>
                     <button type="submit" class="btn btn-primary">Kontrolli</button>
@@ -103,12 +103,12 @@
                     $width = $_POST["width"];
                     if (!empty($pikk) && !empty($width)) {
                         if ($pikk == $width) {
-                            echo "<p>See on ruut</p>";
+                            echo "See on ruut";
                         } else {
-                            echo "<p>See on ristkülik</p>";
+                            echo "See on ristkülik";
                         }
                     } else {
-                        echo "<p>Pikkus või laius on puudu</p>";
+                        echo "Pikkus või laius on puudu";
                     }
                 }
                 ?>
@@ -134,12 +134,12 @@
                     $b = $_POST["b"];
                     if (!empty($a) && !empty($b)) {
                         if ($a == $b) {
-                            echo "<p>▢</p>";
+                            echo "▢";
                         } else {
-                            echo "<p>▭</p>";
+                            echo "▭";
                         }
                     } else {
-                        echo "<p>Pikkus või laius on puudu</p>";
+                        echo "Pikkus või laius on puudu";
                     }
                 }
                 ?>
@@ -162,12 +162,12 @@
                         $aasta = date("Y");
                         $age = $aasta - $synni;
                         if ($age % 5 == 0) {
-                            echo "<p>Tegemist on juubeliaastaga</p>";
+                            echo "Tegemist on juubeliaastaga";
                         } else {
-                            echo "<p>Tegemist ei ole juubeliaastaga</p>";
+                            echo "Tegemist ei ole juubeliaastaga";
                         }
                     } else {
-                        echo "<p>Sünniaasta on puudu</p>";
+                        echo "Sünniaasta on puudu";
                     }
                 }
                 ?>
@@ -189,19 +189,19 @@
                     if (!empty($punktid)) {
                         switch ($punktid) {
                             case $punktid >= 10:
-                                echo "<p>SUPER!</p>";
+                                echo "SUPER!";
                                 break;
                             case $punktid >= 5 && $punktid <= 9:
-                                echo "<p>TEHTUD!</p>";
+                                echo "TEHTUD!";
                                 break;
                             case $punktid < 5:
-                                echo "<p>KASIN!</p>";
+                                echo "KASIN!";
                                 break;
                             default:
-                                echo "<p>SISESTA OMA PUNKTID!</p>";
+                                echo "SISESTA OMA PUNKTID!";
                         }
                     } else {
-                        echo "<p>KT punktid on puudu</p>";
+                        echo "KT punktid on puudu";
                     }
                 }
                 ?>
