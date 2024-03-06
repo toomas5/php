@@ -171,7 +171,7 @@
             
             if (isset($_GET['eemalda']) && !empty($_GET['eemalda'])) {
                 $eemaldatav_nimi = $_GET['eemalda'];
-                $index = array_search($eemaldatav_nimi, $firma_nimed);
+                $index = array_search($eemaldatav_nimi, $firma_nimed); 
                 if ($index !== false) {
                     unset($firma_nimed[$index]);
                 }
