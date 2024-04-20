@@ -1,7 +1,7 @@
 <!doctype html>
 <!-- nimi -->
 <!--
-               yl01
+               yl06
               toomas
               15/02/24
 -->
@@ -31,6 +31,14 @@
 
         echo'<br>';
 
+        $tarn = 10;
+
+        for ($nr = 0; $nr < $tarn; $nr++) {
+            echo "* ";
+        }
+
+        echo'<br>';
+
         for($rida=1; $rida<=5; $rida++){ 
             echo '*<br>';
         }
@@ -48,7 +56,6 @@
 
         for($nr=10;$nr>=1;$nr--){
             if($nr>10){
-            continue;
             } 
             echo $nr.'<br>';
             }
@@ -58,11 +65,21 @@
         for($nr=1;$nr<=100;$nr++){
             if($nr % 3 == 0){
                 echo $nr.' ';
-            continue;
                 }
             }
         
-        
+        $poisid = array("Jaan", "Peeter", "Marko", "Andres", "Tõnu");
+        $tudrukud = array("Kati", "Mari", "Liis", "Anna", "Eva");
+
+        echo'<br>';
+
+        if (count($poisid) == count($tudrukud)) {
+                for ($nr = 0; $nr < count($poisid); $nr++) {
+                echo $poisid[$nr] . " ja " . $tudrukud[$nr] . "<br>";
+            }
+        } else {
+            echo "Massiivid ei ole võrdsed!";
+        }
 
     ?>
 
