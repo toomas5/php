@@ -1,0 +1,48 @@
+<!doctype html>
+<!-- nimi -->
+<!--
+               yl10
+              toomas
+              05/05/24
+-->
+
+<html lang="en">
+
+<head>
+    <title>10</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Tere!</h1>
+    <nav>
+        <menu>
+            <a href="h10.php?leht=avaleht">Avaleht</a> |
+            <a href="h10.php?leht=portfoolio">Portfoolio</a> |
+            <a href="h10.php?leht=kaart">Kaart</a> |
+            <a href="h10.php?leht=kontakt">Kontakt</a> |
+        </menu>
+    </nav>
+
+    <?php
+    if(!empty($_GET['leht'])) {
+        $leht = $_GET['leht'];
+        $lubatud = array('avalehy', 'portfoolio', 'kaart', 'kontakt');
+        if(in_array($leht, $lubatud)) {
+            include($leht . '.php');
+        } else {
+            echo 'Valitud lehte ei eksisteeri!';
+        }
+    }
+    ?>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+
+</html>
