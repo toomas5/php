@@ -30,7 +30,7 @@
     <?php
     if(!empty($_GET['leht'])) {
         $leht = $_GET['leht'];
-        $lubatud = array('avalehy', 'portfoolio', 'kaart', 'kontakt');
+        $lubatud = array('avaleht', 'portfoolio', 'kaart', 'kontakt');
         if(in_array($leht, $lubatud)) {
             include($leht . '.php');
         } else {

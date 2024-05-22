@@ -98,11 +98,11 @@
                     <button type="submit" class="btn btn-primary">Kontrolli</button>
                 </form>
                 <?php
-                if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["pikk"]) && isset($_POST["width"])) {
-                    $pikk = $_POST["pikk"];
-                    $width = $_POST["width"];
-                    if (!empty($pikk) && !empty($width)) {
-                        if ($pikk == $width) {
+                if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["a"]) && isset($_POST["b"])) {
+                    $a = $_POST["a"];
+                    $b = $_POST["b"];
+                    if (!empty($a) && !empty($b)) {
+                        if ($a == $b) {
                             echo "See on ruut";
                         } else {
                             echo "See on ristkülik";
@@ -118,20 +118,20 @@
                 <h4>Ristkülik või ruut II</h4>
                 <form method="post" action="">
                     <div class="form-group">
-                        <label for="a">Pikkus:</label>
-                        <input type="number" class="form-control" id="a" name="a" required>
+                        <label for="a2">Pikkus:</label>
+                        <input type="number" class="form-control" id="a2" name="a2" required>
                     </div>
                     <div class="form-group">
-                        <label for="b">Laius:</label>
-                        <input type="number" class="form-control" id="b" name="b" required>
+                        <label for="b2">Laius:</label>
+                        <input type="number" class="form-control" id="b2" name="b2" required>
                     </div>
                     <br>
                     <button type="submit" class="btn btn-primary">Kontrolli</button>
                 </form>
                 <?php
-                if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["a"]) && isset($_POST["b"])) {
-                    $a = $_POST["a"];
-                    $b = $_POST["b"];
+                if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["a2"]) && isset($_POST["b2"])) {
+                    $a = $_POST["a2"];
+                    $b = $_POST["b2"];
                     if (!empty($a) && !empty($b)) {
                         if ($a == $b) {
                             echo "▢";

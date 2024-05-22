@@ -228,12 +228,12 @@
     }
     
     echo "<h2>Kolmas pilt:</h2>";
-    echo "<img src='img/{$pildid[2]}' class='img-fluid' alt='Third Image'><br><br>";
+    echo "<img src='pildid/{$pildid[2]}' class='img-fluid' alt='kolmas'><br><br>";
     
     echo "<h2>Kõik pildid:</h2>";
     echo "<div class='container'><div class='row'>";
     foreach ($pildid as $pilt) {
-        echo "<div class='col-md-2'><img src='img/$pilt' class='img-fluid' alt='$pilt'></div>";
+        echo "<div class='col-md-2'><img src='pildid/$pilt' class='img-fluid' alt='$pilt'></div>";
     }
     echo "</div></div>";
     ?>
