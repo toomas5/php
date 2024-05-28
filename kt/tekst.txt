@@ -1,0 +1,5 @@
+Lo;Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+re;Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+mi;It has survived not only five centuries, but also the leap into electronic.
+fa;It was popularised in the 1960s with the release of Letraset sheets.
+so;Contrary to popular belief, Lorem Ipsum is not simply random text.
